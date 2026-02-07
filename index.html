@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For My Janu ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(#ffb6c1, #ff69b4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+}
+
+#roseScreen, #messageScreen {
+    text-align: center;
+    color: white;
+}
+
+.rose {
+    font-size: 120px;
+    animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.tap {
+    margin-top: 20px;
+    font-size: 20px;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0%,100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+#messageScreen {
+    display: none;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.name {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<div id="roseScreen" onclick="openMessage()">
+    <div class="rose">🌹</div>
+    <div class="tap">Tap the Rose 💕</div>
+</div>
+
+<div id="messageScreen">
+    <div class="card">
+        <h1>Sorry Meri Janu ❤️</h1>
+        <p>
+            Mera bacha, mere golo molu 🥺<br><br>
+            Mujhse galti ho gayi…<br>
+            Rose Day bhool gaya 💔<br><br>
+            Par mera pyaar kabhi kam nahi hota 🌹<br>
+            Yeh rose sirf flower nahi,<br>
+            meri feelings hain tumhare liye 💞
+        </p>
+        <div class="name">
+            ❤️ Apki jaan – Deep ❤️
+        </div>
+    </div>
+</div>
+
+<script>
+function openMessage() {
+    document.getElementById("roseScreen").style.display = "none";
+    document.getElementById("messageScreen").style.display = "block";
+}
+</script>
+
+</body>
+</html>
